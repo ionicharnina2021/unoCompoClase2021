@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>continuacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-icon name="airplane-outline"></ion-icon>
+    <ion-label class="mi-etiqueta">Me voy de viaje</ion-label>
+    <ion-button>Aceptar</ion-button>
+  </ion-item>
+  <ion-label class="mi-etiqueta">Me voy de viaje</ion-label>
+  <ion-item>
+    <ion-label>Lluvia</ion-label>
+    <ion-range  value= "34"  [(ngModel)]="rango"></ion-range>
+    <ion-label>{{rango}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Datetime</ion-label>
+    <ion-datetime [(ngModel)]="fecha"></ion-datetime>
+    <!-- <ion-datetime></ion-datetime> -->
+  </ion-item>
+  <ion-item>{{fecha}}</ion-item>
+</ion-content>
